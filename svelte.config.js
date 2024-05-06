@@ -10,6 +10,9 @@ const config = {
   preprocess: vitePreprocess(),
   kit: {
     adapter: getAdapter(),
+    paths: {
+      base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
+    },
     csp: { mode: 'auto' },
     alias: {
       $QWER: './QWER',

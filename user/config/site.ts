@@ -12,7 +12,7 @@ import Avatar_512_PNG from '$assets/avatar.png?w=512&h=512&imagetools';
 import SiteCover from '$assets/qwer.webp';
 
 export const siteConfig: Site.Config = {
-  url: 'https://abhinavpatel00.github.io/coco-blog/',
+  url: 'https://abhinavpatel00.github.io/core-computations/',
   title: 'COCO',
   subtitle: '🚀 COCO - computational ❤',
   description: '🚀 QWER - Awesome Blog Starter, Built using Svelte with ❤',
@@ -24,14 +24,14 @@ export const siteConfig: Site.Config = {
     name: 'Abhinav Patel',
     status: '🚀',
     statusTip:
-      '<a href="https://github.com/Abhinavpatel00/coco_blog" rel="external" style="color:#0F0" onMouseOver="this.style.color=\'#0FF\'" onMouseOut="this.style.color=\'#0F0\'" >QWER</a> is Awesome !',
+      '<a href="https://github.com/Abhinavpatel00/core-computations" rel="external" style="color:#0F0" onMouseOver="this.style.color=\'#0FF\'" onMouseOut="this.style.color=\'#0F0\'" >QWER</a> is Awesome !',
     avatar: Avatar,
     avatar_128: Avatar_128,
     avatar_48_png: Avatar_48_PNG,
     avatar_96_png: Avatar_96_PNG,
     avatar_192_png: Avatar_192_PNG,
     avatar_512_png: Avatar_512_PNG,
-    website: 'https://github.com/Abhinavpatel00/coco_blog',
+    website: 'https://github.com/Abhinavpatel00/core-computations',
     github: 'https://github.com/Abhinavpatel00',
     email: 'patelabhinav010@gmail.com',
     bio: `Compassion <br/> my Dharma`,
@@ -118,7 +118,7 @@ export const navConfig: (DD.Nav | DD.Link)[] = [
   },
   {
     name: 'Get QWER 🚀',
-    url: 'https://github.com/Abhinavpatel00/coco_blog',
+    url: 'https://github.com/Abhinavpatel00/core-computations',
     rel: 'external',
   },
 ];
@@ -137,7 +137,7 @@ export const mobilenavConfig: DD.Nav = {
     },
     {
       name: 'Get QWER 🚀',
-      url: 'https://github.com/Abhinavpatel00/coco_blog',
+      url: 'https://github.com/Abhinavpatel00/core-computations',
       rel: 'external',
     },
   ],
