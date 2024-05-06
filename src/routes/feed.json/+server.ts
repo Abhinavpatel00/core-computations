@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 export const prerender = true;
 import type { RequestHandler } from '@sveltejs/kit';
 import { siteConfig } from '$config/site';
@@ -19,7 +20,7 @@ const render = async () => {
     feed_url: `${new URL(`feed.json`, siteConfig.url).href}`,
     description: siteConfig.description,
     icon: siteConfig.author.avatar,
-    favicon: `${new URL(`favicon.png`, siteConfig.url).href}`,
+    favicon: `${new URL(`{base}/favicon.png`, siteConfig.url).href}`,
     authors: [
       {
         name: siteConfig.author.name,

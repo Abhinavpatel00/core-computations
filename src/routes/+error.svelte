@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { page } from '$app/stores';
   import { siteConfig } from '$config/site';
   import LL from '$i18n/i18n-svelte';
@@ -22,6 +23,6 @@
       class="select-none max-w-lg w-full h-auto"
       src={Error404}
       alt="404.webp" />
-    <a href="/" class="btn btn-ghost underline text-lg !p4" target="_self">{$LL.Page404BackHome()}</a>
+    <a href="{base}/" class="btn btn-ghost underline text-lg !p4" target="_self">{$LL.Page404BackHome()}</a>
   </article>
 </main>

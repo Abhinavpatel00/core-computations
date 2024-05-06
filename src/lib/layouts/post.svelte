@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import '$lib/styles/prism.scss';
   import '$lib/styles/prose.scss';
   import 'katex/dist/katex.min.css';
@@ -154,7 +155,7 @@
                 class="absolute z-10 i-mdi-chevron-left !w-[1.5rem] !h-[1.5rem] top-[1.25rem] left-[0.75rem] animate-bounce-left" />
               <a
                 rel="next"
-                href="/{nextPost.slug}"
+                href="{base}/{nextPost.slug}"
                 class="absolute text-2xl font-bold z-10 !decoration-none !underline-none title-link-orange-500-orange-500 top-[3rem] left-[1rem] mr8">
                 {nextPost.title}
               </a>
@@ -169,7 +170,7 @@
             <div id="prev-post" class="relative flex-1 group overflow-hidden bg-white/[0.5] dark:bg-black/[0.5]">
               <a
                 rel="prev"
-                href="/{prevPost.slug}"
+                href="{base}/{prevPost.slug}"
                 class="absolute text-2xl font-bold z-10 !decoration-none !underline-none title-link-orange-500-orange-500 top-[3rem] right-[1rem] ml8">
                 {prevPost.title}
               </a>

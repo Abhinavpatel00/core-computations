@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import type { Post } from '$lib/types/post';
   import { browser } from '$app/environment';
   import { replaceState } from '$app/navigation';
@@ -180,7 +181,7 @@
             </Dropdown>
           </div>
 
-          <a href="/" class="text-xl font-semibold normal-case btn btn-ghost" on:click={resetHome}>
+          <a href="{base}/" class="text-xl font-semibold normal-case btn btn-ghost" on:click={resetHome}>
             {siteConfig.title}
           </a>
 

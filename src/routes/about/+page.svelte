@@ -3,44 +3,202 @@
   /* eslint-disable @typescript-eslint/ban-ts-comment */
   // @ts-nocheck
   import Post from '$lib/layouts/post.svelte';
-  // import ImgZoom from '$lib/components/image_zoom.svelte';
-  // import InfoBox from '$lib/components/info_box.svelte';
+  import ImgZoom from '$lib/components/image_zoom.svelte';
+  import Video from '$lib/components/video.svelte';
+  import CodeCopy from '$lib/components/code_copy.svelte';
+  import InfoBox from '$lib/components/info_box.svelte';
 </script>
 
 <Post>
   <article slot="post_content">
-    <h2 id="about"><a href="#about">About Abhinav Patel</a></h2>
+    <h2 id="qwer"><a href="#qwer">🎉 QWER</a></h2>
     <p>
-      Hi there! I'm Abhinav Patel, a tech enthusiast with a passion for understanding the intricate dance between
-      hardware and software. While my expertise lies in web development, my true fascination lies in exploring the
-      intersection of computer architecture and software engineering.
+      <a href="https://github.com/kwchang0831/svelte-QWER" rel="external">QWER</a>
+      is a blog starter and static site generator, built with
+      <a href="https://svelte.dev/" rel="external">Svelte</a>
+      and
+      <a href="https://kit.svelte.dev/" rel="external">SvelteKit</a>
+      .
     </p>
+    <ImgZoom src="/preview.webp" alt="QWER Preview" />
 
+    <ImgZoom src="/mobile-preview.webp" alt="QWER Mobile Preview" />
+
+    <h2 id="features"><a href="#features">✨ Features</a></h2>
+    <ul>
+      <li>
+        <p>
+          ⚡ Super fast site performance. Near <strong>Perfect</strong>
+          <a href="https://pagespeed.web.dev/" rel="external">PageSpeed</a>
+          score.
+        </p>
+      </li>
+      <li>
+        <p>
+          🤗 SEO ready with meta, <a href="https://ogp.me/" rel="external">Open Graph</a>
+          ,
+          <a href="https://schema.org/" rel="external">Schema</a>
+          ,
+          <a href="https://json-ld.org/" rel="external">JSON-LD</a>
+          ,
+          <a href="https://indieweb.org/microformats2" rel="external">microformats2</a>
+          .
+        </p>
+      </li>
+      <li><p>🔎 On-site Search.</p></li>
+      <li><p>📱 Mobile-First / Responsive design.</p></li>
+      <li>
+        <p>
+          ✍️ Write post with <a href="https://www.markdownguide.org/basic-syntax/" rel="external">Markdown syntax</a>
+          .
+        </p>
+      </li>
+      <li>
+        <p>
+          🧮 🧪 Wirte Math and Chemical formulas with <a
+            href="https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf"
+            rel="external">
+            TeX Syntax
+          </a>
+          via
+          <a href="https://katex.org/" rel="external">Katex</a>
+          &amp;
+          <a href="https://mhchem.github.io/MathJax-mhchem/" rel="external">mhchem</a>
+          .
+        </p>
+      </li>
+      <li><p>📁 Folder-based organization for creating posts.</p></li>
+      <li><p>🏷️ Multi-Tags filtering.</p></li>
+      <li><p>📄 Auto-Generate Table of Content for posts.</p></li>
+      <li>
+        <p>
+          📦 Out-of-the-box support for <a href="https://validator.w3.org/feed/docs/atom.html" rel="external">
+            Atom feed
+          </a>
+          , Sitemap,
+          <a href="https://web.dev/progressive-web-apps/" rel="external">PWA</a>
+          ,
+          <a href="https://www.jsonfeed.org/" rel="external">JSON Feed</a>
+          .
+        </p>
+      </li>
+      <li>
+        <p>
+          🖼️ Automatic image optimization via <a href="https://github.com/JonasKruckenberg/imagetools" rel="external">
+            vite-imagetools
+          </a>
+          .
+        </p>
+      </li>
+      <li><p>⚙️ Support embedding Svelte components and Javascript with Markdown.</p></li>
+      <li>
+        <p>
+          💬 Supports <a href="https://github.com/giscus/giscus" rel="external">Giscus</a>
+          - a comments system powerd by Github Discussions.
+        </p>
+      </li>
+      <li>
+        <p>
+          💄 Utilizes <a href="https://github.com/unocss/unocss" rel="external">UnoCSS</a>
+          - the instant on-demand atomic CSS engine.
+        </p>
+      </li>
+      <li>
+        <p>
+          🌐 i18n via <a href="https://github.com/ivanhofer/typesafe-i18n" rel="external">typesafe-i18n</a>
+          .
+        </p>
+      </li>
+      <li>
+        <p>
+          🚀 Deploy the blog <strong>Free</strong>
+          on
+          <a href="https://vercel.com/" rel="external">Vercel</a>
+          or
+          <a href="https://Netlify.com/" rel="external">Netlify</a>
+          .
+        </p>
+      </li>
+    </ul>
+    <h2 id="learn-more"><a href="#learn-more">📚 Learn More</a></h2>
     <p>
-      My journey into the world of technology began with a simple question: how does the software I write interact with
-      the hardware it runs on? This curiosity led me down a rabbit hole of discovery, from studying the fundamentals of
-      computer architecture to exploring the inner workings of modern processors and memory systems.
+      Please read more at our <a href="https://docs-svelte-qwer.vercel.app/" rel="external">Documentation</a>
+      .
     </p>
-
+    <h2 id="current-state"><a href="#current-state">👷 Current State</a></h2>
     <p>
-      While I may not be tinkering with hardware on a daily basis, I find immense joy in unraveling the mysteries of how
-      hardware and software work together to power our digital world. Whether it's diving into the intricacies of CPU
-      pipelines or exploring the nuances of memory management, I'm always eager to deepen my understanding of the
-      underlying principles that govern computing.
+      <a href="https://github.com/kwchang0831/svelte-QWER" rel="external">QWER</a>
+      is at its&#39; very early stage. Kindly expect frequent breaking changes.
     </p>
-
     <p>
-      Beyond the technical intricacies, I'm also passionate about sharing my knowledge and insights with others. Whether
-      through writing, teaching, or engaging in meaningful discussions, I believe in the power of knowledge-sharing to
-      drive innovation and inspire others to pursue their own intellectual passions.
+      Just copy and paste your <code class="inline-code-block">user</code>
+      folder to the latest release.
     </p>
-
     <p>
-      Thanks for joining me on this journey of exploration and discovery. Whether you're a fellow enthusiast or just
-      curious about the inner workings of technology, I'm always eager to connect and exchange ideas. Feel free to reach
-      out – together, we can unlock the secrets of the digital universe!
+      Watch out for the CHANGELOG to see if yor are required to migrate <code class="inline-code-block">
+        user/config
+      </code>
+      or other places.
     </p>
+    <h2 id="issues-problems-questions"><a href="#issues-problems-questions">❓ Issues / Problems / Questions</a></h2>
+    <p>
+      Please take advantage of our <a
+        href="https://github.com/kwchang0831/svelte-QWER/discussions/categories/q-a"
+        rel="external">
+        Github&#39;s Q&amp;A Discussion board
+      </a>
+      .
+    </p>
+    <h2 id="are-you-using-qwer"><a href="#are-you-using-qwer">😊 Are you using QWER?</a></h2>
+    <p>
+      Please consider adding <code class="inline-code-block">svelte-qwer</code>
+      topic to your repository.
+    </p>
+    <p>
+      To see who else are using QWER, please check <a href="https://github.com/topics/svelte-qwer" rel="external">
+        Github-Topics: svelte-qwer
+      </a>
+      .
+    </p>
+    <h2 id="support"><a href="#support">🎉 Support</a></h2>
+    <div
+      class="flex"
+      style="display:inline-block; font-size: 24px; --un-bg-opacity: 1; background-color: rgba(255, 221, 0); border-radius: 0.5rem; padding: 12px 18px; border: 2px solid;">
+      <a class="flex" href="https://www.buymeacoffee.com/kwchang0831" style="color: black;">
+        <span>🥓</span>
+        <span>Buy me a Bacon</span>
+      </a>
+    </div>
 
-    <!-- <ImgZoom src="/profile-pic.webp" alt="Abhinav Patel Profile Picture" /> -->
+    <h2 id="license"><a href="#license">📝 License</a></h2>
+    <p><a href="https://github.com/kwchang0831/svelte-QWER/blob/main/LICENSE" rel="external">MIT</a></p>
+    <h2 id="credits"><a href="#credits">🙏 Credits</a></h2>
+    <ul>
+      <li>
+        <p>
+          Cover Photo by <a
+            href="https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Jess Bailey
+          </a>
+          on
+          <a
+            href="https://unsplash.com/s/photos/note?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash
+          </a>
+        </p>
+      </li>
+      <li>
+        <p>
+          Avatar Illustration by <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS">Liam Moore</a>
+          from
+          <a href="https://icons8.com/illustrations">Ouch!</a>
+        </p>
+      </li>
+    </ul>
+    <h2 id="end"><a href="#end">👍 END</a></h2>
+    <p>
+      Thanks so much for interesting in <a href="https://github.com/kwchang0831/svelte-QWER" rel="external">QWER</a>
+      . Please try it out and let me know what you think 😊.
+    </p>
   </article>
 </Post>
